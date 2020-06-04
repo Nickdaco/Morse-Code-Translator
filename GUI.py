@@ -5,7 +5,6 @@ root = Tk()
 
 root.title('Morse Translator')
 
-# .... . .-.. .-.. ---  .-- --- .-. .-.. -.. 
 # Enter Label
 enterLabel = Label(root, text='Enter:',)
 enterLabel.grid(row=0, column=0)
