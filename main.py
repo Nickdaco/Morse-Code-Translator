@@ -3,7 +3,7 @@ import pygame as pg
 # Uses pygame mixer to play sound
 
 def playMorse(letter): # play the morse code
-    file = '/Users/Nicksmac/Desktop/PyCharm/MorseCodeTranslator/MorseCode/Morse-{}.ogg.mp3'.format(letter)
+    file = 'PATH TO MORSE FOLDER/Morse-{}.ogg.mp3'.format(letter)
     volume = 1
 
     # initializes mixer
