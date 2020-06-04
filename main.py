@@ -15,7 +15,6 @@ def playMorse(letter): # play the morse code
 
     clock = pg.time.Clock()
     while pg.mixer.music.get_busy():
-
         # check if playback has finished
         clock.tick(30)
 
@@ -39,7 +38,6 @@ class MorseTranslate:
         for letter in input:
             if letter == " ":
                 string += morseDict[letter.upper()]
-
             else:
                 try:
                     string += morseDict[letter.upper()] + ' '
@@ -50,19 +48,16 @@ class MorseTranslate:
         print(string)
         return string
 
-
     def morseTranslateAudio(self, input):
 
         for letter in input:
             if letter == " ":
                 pass
-
             else:
                 try:
                     playMorse(letter)
                 except KeyError:
                     pass
-
 
     def morseTranslateText(self, input):
 
@@ -71,7 +66,6 @@ class MorseTranslate:
             if letter == " ":
                 string += morseDict[letter.upper()]
             else:
-
                 try:
                     string += morseDict[letter.upper()] + ' '
                 except KeyError:
