@@ -1,0 +1,1 @@
+Copy the MorseCodeAudio files to a folder and change the file variable in main.py to that directory
